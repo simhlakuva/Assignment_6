@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BankingAppSH.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Banking App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="EnterDepositAmount" Placeholder="Enter Amount" Keyboard="Numeric"/>
+        <Entry x:Name="EnterDepositDescription" Placeholder="Enter Description"/>
+        <Button x:Name="DMoneyButton" Clicked="DMoneyButton_Clicked" Text="Deposit Money"/>
+
+        <Entry x:Name="EnterWithdrawAmount" Text="Enter Amount" Keyboard="Numeric"/>
+        <Entry x:Name="EnterWithdrawDescription" Text="Enter Description"/>
+        <Button x:Name="WMoneyButton" Text="Withdraw Money" Clicked="WMoneyButton_Clicked"/>
+
+        <Button x:Name="TransactionHistoryButton" Text="View Transaction History" Clicked="THistoryButton_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage> 
